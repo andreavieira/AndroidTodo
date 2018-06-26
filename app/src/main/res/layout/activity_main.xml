@@ -14,9 +14,10 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:onClick="onAddItem"
-        android:text="Add"
+        android:text="@string/add_string"
         tools:layout_editor_absoluteX="298dp"
-        tools:layout_editor_absoluteY="463dp" />
+        tools:layout_editor_absoluteY="463dp"
+        android:layout_alignParentRight="true" />
 
     <ListView
         android:id="@+id/lvItems"
@@ -25,13 +26,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_alignParentLeft="true">
 
     </ListView>
 
     <EditText
         android:id="@+id/etNewItem"
-        android:layout_width="294dp"
+        android:layout_width="285dp"
         android:layout_height="47dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
@@ -39,5 +41,6 @@
         android:hint="Add a new item"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="463dp" />
+        tools:layout_editor_absoluteY="463dp"
+        android:layout_alignParentLeft="true" />
 </RelativeLayout>
